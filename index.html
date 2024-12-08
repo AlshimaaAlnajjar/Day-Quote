@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Quote</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main>
+       <section class="container-fluid">
+        <div class="row vh-100 justify-content-center align-items-center">
+          <div class="col-md-8 col-lg-4">
+            <div class="quote_card shadow-lg p-md-5 p-2 rounded-3 bg-white ">
+              <div class="quote_card_header pb-2 mb-4 position-relative">
+                <h2 class="quote_card_title fs-2 fw-semibold">Quote of the day</h2>
+              </div>
+              <div class="quote_card_body position-relative p-3 pb-0">
+                  <span class="material-icons quote_card_icon">format_quote</span>
+                  <p class="quote_card_text fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit officiis nemo autem minima eveniet quo!</p>
+                  <p class="quote_card_author text-end text-muted fst-italic">Alshimaa Alnajjar</p>
+              </div>
+              <div class="quote_card_footer mt-4">
+                <button class="btn button-primary px-4" onclick="generateQuote()">Generate New Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+    </main>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+:root{
+  --primary-color:rgba(40,95,225,1);
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins";
+  background: rgb(255,224,237);
+  background: radial-gradient(circle, rgba(255,224,237,1) 0%, rgba(40,95,225,1) 100%);
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+.quote_card_header::before{
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 0px;
+}
+.quote_card_icon{
+  color: var(--primary-color);
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: 40px !important;
+  opacity: 0.7;
+}
+.button-primary{
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.button-primary:hover{
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
